@@ -1,0 +1,67 @@
+.add-post{
+    margin-bottom: 3rem;
+    box-shadow:0 15px  25px  0 rgba(0, 0, 0, 0.45);
+    background-color: $secondary;
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+
+    @include breakpoint($mobile-bp){
+        padding: 1.5rem;
+    }
+
+    
+}
+
+.add-post__form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+}
+
+.add-post__textarea{
+    display: block;
+    flex-grow: 1;
+    height: 26px;
+    resize: none;
+
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: $white;
+    font-family: inherit;
+    overflow: hidden;
+
+    &::placeholder{
+        color: #D2D2D2;
+    }
+}
+
+.add-post__forms-actions{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    width: 120px;
+}
+
+.add-post__label, 
+.add-post__btn{
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    border: none;
+    input{
+        display: none;
+    }
+}
+
+.add-post__label{
+    background: #EBEBEB url(../../img/add-post/photo\ 1.svg) center no-repeat;
+}
+
+.add-post__btn{
+    background-color: $blue-btn;
+    border-radius: 50%;
+}

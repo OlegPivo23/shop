@@ -1,0 +1,44 @@
+.nav{
+    &__list{
+        display: flex;
+    }
+
+    &__item{
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+    }
+
+    &__link{
+        position: relative;
+        font-size: 1.5rem;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -0.5rem;
+            height: 0.2rem;
+            width: 0;
+            background-color: var(--color-dark);
+            transition: width .3s;
+
+            
+        }
+
+        &:hover{
+            &::before{
+                width: 100%;
+                transition: width .3s ease;
+            }
+        }
+        
+        &--curent{
+            &::before{
+                width: 100%;
+                transition: width 0.15s ease;
+            }
+
+        }
+    }
+}

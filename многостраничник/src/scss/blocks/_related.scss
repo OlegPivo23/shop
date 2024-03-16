@@ -1,0 +1,23 @@
+.related{
+    margin-bottom: 6rem;
+}
+
+.related__list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 24px 43px;
+}
+
+.related__title{
+    font-size: 1.8rem;
+    margin-bottom: 1.9rem;
+    font-weight: 500;
+
+}
+
+.related__list-link{
+    font-size: 1.4rem;
+    font-weight: 1.6rem;
+    color: rgb(243, 235, 162);
+}

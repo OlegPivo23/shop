@@ -1,0 +1,42 @@
+.breadcrumbs{
+    padding: 3.6rem 0;
+    &__list{
+        display: flex;
+        align-items: center;
+        column-gap: 3.5rem;
+        border-bottom: solid 1px #eee;
+        padding-bottom: 1rem;
+    }
+
+    
+    
+    &__link{
+        columns: var(--color-gray);
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        position: relative;
+
+        position: relative;
+
+        
+        &::after{
+            content: '/';
+            position: absolute;
+            top: 0;
+            right: -20px;
+        }
+
+       
+        &--current{
+            color: var(--color-black);
+            font-weight: 700;
+            &::after{
+                content: "";
+            }
+        }
+
+        &__item{
+           
+        }
+    }
+}

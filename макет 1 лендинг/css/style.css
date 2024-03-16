@@ -1,0 +1,363 @@
+@import url(./normolize.css);
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #070707;
+}
+
+p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: border-bottom .4s;
+}
+
+a:hover{
+    border-bottom: #828282 solid 1px;
+}
+
+a:active{
+    color: blue;
+}
+
+.active{
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+}
+
+span{
+    /* display: block; */
+}
+
+.body__wrapper{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.container{
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__navigation{
+    margin-bottom: 72px;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 33px;
+}
+
+.nav__item{
+    color: #828282;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+/* Верстаем секцию main hero */
+
+
+/* Делаем отсутп между секциями */
+
+.hero{
+    margin-bottom: 104px;
+}
+
+
+.hero__text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.hero__title{
+    color:  #070707;
+    font-size: 47.339px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 124px;
+}
+
+
+.hero__subtitle{
+    max-width: 156px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero__lang{
+    transform: rotate(-90deg);
+    color: #828282;
+}
+
+.hero__lang span{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Верстаем картинку */
+
+.hero__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+/* Скрываем картинку, чтобы потом показать ее при адаптиве */
+
+.mobile{
+    display: none;
+}
+
+/* Начинаем верстать секцию About me */
+
+
+.about__title{
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #070707;
+}
+
+.about__subtitle{
+    color: #070707;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 486px;
+    margin: 0 auto;
+}
+
+.about__subtitle:not(:last-child){
+    margin-bottom: 50px;
+}
+
+/* Делаем отсуп между двумя секциями  */
+
+.about{
+    margin-bottom: 107px;
+}
+
+/* Верстаем секцию skills */
+
+
+.skills__title{
+    margin-bottom: 70px;
+}
+.skills__subtitle{
+    text-align: center;
+    margin-bottom: 84px;
+}
+
+.skills__rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__rate-wrap p{
+    max-width: 63px;
+    text-align: center;
+    padding-bottom: 41px;
+}
+
+.special{
+}
+
+.rate{
+    display: flex;
+    gap: 125px;
+}
+
+/* Делаем отсуп между секциями */
+
+.skills{
+    margin-bottom: 96px;
+}
+
+/* Верстаем футер */
+
+.footer__title{
+    margin-top: 115px;
+    margin-bottom: 20px;
+}
+
+.footer__subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:  #070707;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.footer__subtitle span{
+    display: block;
+}
+
+/* Верстаем кнопку футера */
+
+.footer__button{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #070707;
+    padding: 13px 28px;
+    border-radius: 40px;
+}
+
+/* Позиционируем кнопку */
+.footer__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: relative; 
+
+}
+
+.footer__button{
+    transition: background-color .4s;
+    margin-bottom: 86px;
+
+}
+
+.footer__button:hover{
+    background-color: #282828;
+
+}
+
+/* Верстаем иконки соц сетей */
+
+.footer__social{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin-bottom: 46px;
+    cursor: pointer;
+}
+
+/* Верстаем конец футера */
+
+.footer__bottom{
+    text-align: center;
+}
+
+.burger-btn{
+    border: none;
+}
+
+/* Делаем адаптив, бургер меню */
+
+@media (max-width: 937px){
+    .nav__list {
+        display: none;
+    }
+
+    .burger-btn{
+        border: none;
+        background-color: beige;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        width: -350px;
+    }
+
+    .burger-btn span{
+        background-color: black;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        width: 25px;
+        height: 2px;
+    }
+
+    .burger-btn::after{
+        content: "";
+        background-color: black;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        width: 25px;
+        height: 2px;
+    }
+    .burger-btn::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        width: 25px;
+        height: 2px;
+    }
+
+    .header__nav.active{
+            background-color: aqua;
+            height: auto;
+            width: 350px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 10;
+    }
+
+   .nav__list.active{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+    .desctop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+    
+.container{
+    max-width: 850px;
+}
+
+}

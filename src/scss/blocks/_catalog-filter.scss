@@ -1,0 +1,219 @@
+.catalog-filters {
+    padding-top: 3rem;
+    width: 30.9rem;
+    margin-right: 3rem;
+
+   
+}
+
+.catalog-content {
+    min-height: 500px;
+
+    .container{
+        display: flex;
+        
+    }
+}
+
+.hide-filters {
+    padding-left: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: url(../../img/close.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain; // Добавлено для правильного размера фона
+}
+
+.catalog-filter {
+    padding-top: 3rem;
+    cursor: pointer;
+    user-select: none;
+
+    &--open{
+        .catalog-filter__bottom{
+            display: block;
+
+        }
+    }
+
+    .catalog-filter__toggle{
+        &::after{
+            display: none;
+        }
+    }
+
+    &__items{
+        columns: 2;
+        font-size: 1.2rem;
+    }
+
+    &__item{
+        margin-bottom: 1.5rem;
+
+        &:nth-child(5n){
+            margin-bottom: 0;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3.1rem;
+        padding-bottom: 3.1rem;
+    }
+
+    &__caption {
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+
+    &__title {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+
+    &__toggle {
+        position: relative;
+        color: #eee;
+        width: 20px; // Добавлено для правильного отображения
+        height: 20px; // Добавлено для правильного отображения
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 100%; // Добавлено для правильного отображения
+            right: -100%;
+            top: 50%;
+            background-color: currentColor;
+            transform: translate(-50%, -50%); // Исправлено для центрирования
+        }
+
+        &::before {
+            transform: translate(-50%, -50%) rotate(90deg); // Исправлено для поворота
+        }
+    }
+
+    &__bottom{
+        display: none;
+        padding-bottom: 3.3rem;
+
+       
+    }
+}
+
+.custom-checkbox{
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+
+    &__text{
+        position: relative;
+        color: var(--color-gray);
+
+        padding-left: 2rem;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.1rem;
+            height: 1.1rem;
+            border: 2px solid #aaa;
+        }
+
+        &::after{
+            content: "\2713";
+            position: absolute;
+            left: 2px;
+            top: -5px;
+        }
+    }
+
+    &__input{
+        &:checked + span{
+            color: var(--color-dark);
+            font-weight: 700;
+
+            &::before{
+            border-color: var(--color-dark);
+
+            }
+        }
+    }
+}
+
+.custom-select{
+
+    position: relative;
+    cursor: pointer;
+
+    &__dropdown{
+
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+        z-index: 20;
+        background: var(--color-white);
+    }
+
+    &__item{
+        cursor: pointer;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+    &__top{
+        position: relative;
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--color-gray);
+        text-transform: uppercase;
+        user-select: none;
+
+        &::after{
+            content: "";
+            position: absolute;
+            right: -15%;
+            top: 50%;
+            margin-top: -.5rem;
+            width: 1rem;
+            height: 0.6rem;
+            background-image: url("../../img/angle-down.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: translateY(-50%);
+        }
+    }
+
+    &--open{
+        .custom-select__top{
+            &::after{
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+    }
+
+    
+    
+}
+
+
+.custom-select--hide{
+    display: none;
+
+}

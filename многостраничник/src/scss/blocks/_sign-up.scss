@@ -1,0 +1,39 @@
+.sign-up__title{
+    text-align: center;
+}
+
+.sign-up__wrap{
+    width: 280px;
+    margin: 0 auto;
+}
+
+.sign-up-btn{
+    background-color: $blue-btn;
+    margin: 0 auto;
+
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.sign-up__list{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.sign-up__list-item{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    a{
+        color: $white;
+        
+        &:hover{
+        border-bottom: 1px solid $white;
+        }
+    }
+}

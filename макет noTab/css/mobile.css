@@ -1,0 +1,18 @@
+/* @media (max-width:900px){
+    .container{
+        max-width: 800px;
+    }
+
+    .adaptive-hidden{
+        display: none;
+    }
+
+    .mission__title{
+        width: 500px;
+    }
+
+    .mission__subtitle{
+        max-width: 500px;
+        width: 100%;
+    }
+} */
